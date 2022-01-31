@@ -10,7 +10,7 @@
         background: #d9d7d5;
       }
 
-      #contenido {
+      .contenido {
         background: #767775;
         /*flex-basis: 100%;*/
         /*height: 100px;*/
@@ -48,14 +48,17 @@
       }
       .row {
         
+        display: flex;        
         padding: 5px;        
         margin-bottom: 10px;
         margin-left: 20px;
         margin-right: 20px;
+        flex-direction: column;
       }
       .column {
-        flex: 100%;
+        
         padding: 10px;
+       
       }
 
       nav {
@@ -63,6 +66,7 @@
         font-family: Verdana, Geneva, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        text-align: center;
       }
       nav ul {
         list-style: none;
@@ -81,19 +85,19 @@
         color: white;
       }
 
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 600px) {
         nav ul {
           display: flex;
           justify-content: center;
         }
         .column {
+          
           flex: 25%;
+          display: flex;
+          
           
         }
-        .row{
-          display: flex;
-          flex-wrap: wrap;
-        }
+        
       }
 
       
@@ -110,14 +114,15 @@
 
     <nav >
       <ul>
-        <li><a href="#">Index</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <div id="contenido">
+    <div class="contenido">
+      <section id="about">
       <h2>#About</h2>
       <p>
         Por Beatriz Romero, 26 de octubre de 2020 Licenciada en Bellas Artes,
@@ -150,6 +155,8 @@
         la docencia permite que puedas seguir con la formación académica y por
         ende con la
       </p>
+    </section>
+    <section id="experience">
       <h2>#Experience</h2>
       <p>
         Departamento Educacion Navarra Desde el año 2008 profesora de ciclos
@@ -168,6 +175,8 @@
         Bello publicidad. Además como autónoma he creado identidades gráficas
         para diferentes negocios del sector servicios. .
       </p>
+    </section>
+    <section id="work">
       <h2>#Work</h2>
       <p>
         Desde el punto de vista del diseño, la elección de una fuente
@@ -180,21 +189,29 @@
         el éxito de su producto. La tipografía no es solo la portadora del
         mensaje, también en si misma comunica, expresa.
       </p>
+    </section>
     </div>
     <div class="row">
       <div class="column">
         <img alt="photo1" src="archivos/tenerife.PNG" />
         <img alt="photo1" src="archivos/RESTAURANTECONJETURAS.PNG" />
-      </div>
-      <div class="column">
         <img alt="photo1" src="archivos/chefsilvia.PNG" />
-        <img alt="photo1" src="archivos/present_ONLINE.PNG" />
       </div>
       <div class="column">
+        
+        <img alt="photo1" src="archivos/present_ONLINE.PNG" />
         <img alt="photo1" src="archivos/cabildoTNF.PNG" />
         <img alt="photo1" src="archivos/PROYECTO_BARBISTRO.PNG" />
       </div>
+      
+        
+      
     </div>
+    <div class="contenido">
+      <section id="contact">
+    <h2>#Contact</h2>
+  </section>
+  </div>
     <div id="pie">
       <p>Airam Taleb Barreñada</p>
       <p>airamtaleb@gmail.com</p>
