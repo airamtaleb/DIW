@@ -21,8 +21,9 @@ body {
  .autor {
 
   margin-left: 10px;
-  background-position: top;
-  background-size: auto;
+  
+
+
 
  }
 
@@ -32,11 +33,16 @@ body {
     margin-right: 5px;
     background-color: black;
     color: white;
-    text-align: center;
   }
 
   img {
     width: 100%;
+  }
+
+  #tabla {
+
+    text-align: center;
+
   }
  
   /* barra de navegacion */
@@ -45,7 +51,7 @@ body {
     padding-left: 5px;
     padding-top: 10px;
     font-family: Verdana, sans-serif;
-    text-align: left;
+    text-align: center;
   }
   nav ul {
     list-style: none;
@@ -67,9 +73,7 @@ body {
   /*pantalla a partir de este tamaño*/
   @media screen and (min-width: 600px) {
 
-    nav {
-      text-align: center;
-    }
+   
 
     nav ul {
       display: flex;
@@ -79,6 +83,8 @@ body {
     .autor{
       display: flex;
       justify-content: flex-start;
+      padding-left: 20%;
+      padding-top: 50px;
     }
 
     .row {
