@@ -21,9 +21,6 @@ body {
  .autor {
 
   margin-left: 10px;
-  
-
-
 
  }
 
@@ -83,9 +80,24 @@ body {
     .autor{
       display: flex;
       justify-content: flex-start;
-      padding-left: 20%;
+      
       padding-top: 50px;
+      padding-left: 40px;
+      flex-wrap: nowrap;
     }
+
+    .pie {
+
+
+      flex-direction: column;
+
+
+
+    }
+
+
+
+
 
     .row {
       flex: 1;        
