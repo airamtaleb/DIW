@@ -1,3 +1,4 @@
+/* mobile firs */
 body {
     background: #d9d7d5;
   }
@@ -19,9 +20,7 @@ body {
   }
 
  .autor {
-
   margin-left: 10px;
-
  }
 
   .pie {
@@ -34,7 +33,6 @@ body {
   }
 
   .redes {
-
     width: 70px;
     text-align: center;
     margin-left: 20px;
@@ -47,9 +45,7 @@ body {
   }
 
   #tabla {
-
     text-align: center;
-
   }
  
   /* barra de navegacion */
@@ -60,18 +56,21 @@ body {
     font-family: Verdana, sans-serif;
     text-align: center;
   }
+
   nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     background: black;
   }
+  
   nav li a {
     color: white;
     display: block;
     text-decoration: none;
     padding: 0.5em 1em;
   }
+
   nav li a:hover {
     background: rgb(81, 170, 197);
     color: white;
@@ -79,8 +78,6 @@ body {
 
   /*pantalla a partir de este tamaño ,480px es mas comun*/
   @media screen and (min-width: 600px) {
-
-   
 
     nav ul {
       display: flex;
