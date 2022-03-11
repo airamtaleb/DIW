@@ -9,11 +9,9 @@ body {
   justify-content: space-around;
   padding: 10px;
   text-align: center;
-  
 }
 
 .header a {
-
   font-size: 0.8em;
 }
 
@@ -113,7 +111,6 @@ hr {
   padding-bottom: 10px;
   margin: 0;
   list-style: none;
-  
 }
 
 .redes li i:hover {
@@ -121,17 +118,15 @@ hr {
 }
 
 .legal ul {
-
-    background-color: black;
-    color: aquamarine;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
+  background-color: black;
+  color: aquamarine;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 .legal li a {
-
   color: aliceblue;
   font-size: 1em;
   padding: 5px;
@@ -146,9 +141,9 @@ hr {
   justify-content: space-around;
   padding: 10px;
   text-align: center;
-}   
+}
 
-.imagenes  {
+.imagenes {
   display: flex;
   padding: 10px;
   text-align: center;
@@ -158,8 +153,6 @@ hr {
   width: 100%;
 }
 
-
-
 @media (max-width: 480px) {
   nav ul {
     display: block;
@@ -167,25 +160,17 @@ hr {
 }
 
 @media (max-width: 800px) {
-  nav ul , .legal ul,.header {
+  nav ul,
+  .legal ul,
+  .header {
     display: block;
   }
 
-  .header *{
-
+  .header * {
     flex-direction: row-reverse;
   }
 
-  .imagenes  {
-
+  .imagenes {
     display: block;
-   
-    
-    
-  
   }
- 
- 
-
 }
-
