@@ -1,111 +1,191 @@
-/* mobile firs */
+/* mobile last */
 body {
-    background: #d9d7d5;
-  }
+  margin: 0px;
+}
 
-  .contenido {
-    background: #c7c9c6;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;       
-  }
+/* header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  
+}
 
-  .cabecera {
-    min-height: 200px;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-image: url("archivos/gear2.jpg");
-    background-position: center;
-    background-size: cover;
-  }
+.header a {
 
- .autor {
-  margin-left: 10px;
- }
+  font-size: 0.8em;
+}
 
-  .pie {
-    min-height: 100px;
-    margin-left: 5px;
-    margin-right: 5px;
+.picture {
+  background: black;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* barra de navegacion */
+nav ul {
+  font-family: Verdana;
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+
+nav li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+nav li a:hover {
+  color: red;
+}
+
+/* main */
+.main {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+hr {
+  color: red;
+}
+
+.autor {
+  background: #c7c9c6;
+  padding: 10px;
+  min-height: 100px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.imgAutor {
+  max-width: 100px;
+  border-radius: 150px;
+  float: left;
+  padding: 5px;
+}
+
+/* Start: Video Responsive */
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 400px; /* Adecua este valor para controlar la altura del video */
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* footer */
+
+.footer {
+  min-height: 100px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.redes ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-bottom: 10px;
+  margin: 0;
+  list-style: none;
+  
+}
+
+.redes li i:hover {
+  color: red;
+}
+
+.legal ul {
+
     background-color: black;
-    color: white;
-    text-align: center;
-  }
-
-  .redes {
-    width: 70px;
-    text-align: center;
-    margin-left: 20px;
+    color: aquamarine;
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.legal li a {
+
+  color: aliceblue;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.legal li a:hover {
+  color: red;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+}   
+
+.imagenes  {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+}
+
+.imagenes img {
+  width: 100%;
+}
+
+
+
+@media (max-width: 480px) {
+  nav ul {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  nav ul , .legal ul,.header {
+    display: block;
   }
 
-  img {
-    width: 100%;
+  .header *{
+
+    flex-direction: row-reverse;
   }
 
-  #tabla {
-    text-align: center;
+  .imagenes  {
+
+    display: block;
+   
+    
+    
+  
   }
  
-  /* barra de navegacion */
-  nav {    
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 10px;
-    font-family: Verdana, sans-serif;
-    text-align: center;
-  }
+ 
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: black;
-  }
-  
-  nav li a {
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: 0.5em 1em;
-  }
+}
 
-  nav li a:hover {
-    background: rgb(81, 170, 197);
-    color: white;
-  }
-
-  /*pantalla a partir de este tamaño ,480px es mas comun*/
-  @media screen and (min-width: 600px) {
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-    }
-
-    .autor{
-      display: flex;
-      justify-content: flex-start; 
-      padding-top: 50px;
-      padding-left: 40px;
-      flex-wrap: nowrap;
-    }
-
-    .pie {
-      flex-direction: column;
-    }
-
-    .row {
-      flex: 1;        
-    }
-  
-    #tabla {
-      text-align: center;
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap
-    }      
-  }
-
-  
