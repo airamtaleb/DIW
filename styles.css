@@ -1,9 +1,9 @@
-/* mobile last */
+
 body {
   margin: 0px;
 }
 
-/* header */
+/* header----------------------------- */
 .header {
   display: flex;
   justify-content: space-around;
@@ -13,6 +13,11 @@ body {
 
 .header a {
   font-size: 0.8em;
+}
+
+.logo {
+  max-width: 100px;
+
 }
 
 .picture {
@@ -51,7 +56,12 @@ nav li a:hover {
   color: red;
 }
 
-/* main */
+/*color al pulsar/tactil*/
+nav li a:active {
+  color: red;
+}
+
+/* main -----------------------------------*/
 .main {
   margin-bottom: 10px;
   margin-left: 20px;
@@ -68,6 +78,7 @@ hr {
   min-height: 100px;
   justify-content: center;
   border-radius: 5px;
+  margin-bottom: 10px black solid;
 }
 
 .imgAutor {
@@ -80,10 +91,10 @@ hr {
 /* Start: Video Responsive */
 .video-responsive {
   overflow: hidden;
-  padding-bottom: 400px; /* Adecua este valor para controlar la altura del video */
+  padding-bottom: 400px; /*  altura del video */
   position: relative;
   height: 0;
-}
+}  
 .video-responsive iframe {
   left: 0;
   top: 0;
@@ -92,15 +103,26 @@ hr {
   position: absolute;
 }
 
-/* footer */
+.imagenes {
+  display: flex;
+  
+  text-align: center;
+}
 
+.imagenes img {
+  width: 100%;
+}
+
+/* footer ------------------------------*/
 .footer {
-  min-height: 100px;
+  
+  margin: 0px;
   margin-top: 10px;
   background-color: black;
   color: white;
   text-align: center;
   margin-bottom: 10px;
+
 }
 
 .redes ul {
@@ -109,11 +131,19 @@ hr {
   padding-left: 40%;
   padding-right: 40%;
   padding-bottom: 10px;
-  margin: 0;
+  margin: 0px;
   list-style: none;
 }
 
+.redes a {
+  color: white;
+}
+
 .redes li i:hover {
+  color: red;
+}
+
+.redes li:active {
   color: red;
 }
 
@@ -136,27 +166,22 @@ hr {
   color: red;
 }
 
-.imagenes {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  text-align: center;
+.legal li:active {
+  color: red;
 }
 
-.imagenes {
-  display: flex;
-  padding: 10px;
-  text-align: center;
-}
-
-.imagenes img {
-  width: 100%;
-}
+/*media queries -------------------------*/
 
 @media (max-width: 480px) {
   nav ul {
     display: block;
   }
+
+  .imagenes {
+    display: block;
+  }
+
+  
 }
 
 @media (max-width: 800px) {
@@ -167,10 +192,23 @@ hr {
   }
 
   .header * {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
   }
 
-  .imagenes {
-    display: block;
+  .imagenes img {
+    flex: 2;
+
   }
+ 
+}
+
+@media (min-width: 800px) {
+ 
+  .imagenes img {
+    flex: 2;
+
+
+  }
+
+  
 }
