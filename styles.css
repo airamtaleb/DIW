@@ -109,6 +109,8 @@ hr {
 
 .imagenes img {
   width: 100%;
+  
+  
 }
 
 /* footer ------------------------------*/
@@ -169,13 +171,11 @@ hr {
 /*media queries -------------------------*/
 
 @media (max-width: 480px) {
-  nav ul {
-    display: block;
-  }
-
+  nav ul,
   .imagenes {
     display: block;
   }
+
 }
 
 @media (max-width: 800px) {
@@ -185,17 +185,12 @@ hr {
     display: block;
   }
 
-  .header * {
-    flex-direction: column-reverse;
+  .imagenes {
+    display: block;
+    
   }
-
-  .imagenes img {
-    flex: 2;
-  }
+  
+  
 }
 
-@media (min-width: 800px) {
-  .imagenes img {
-    flex: 2;
-  }
-}
+
