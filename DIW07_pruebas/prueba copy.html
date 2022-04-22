@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <style>
+
+
+
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        
+        grid-gap: 5px;
+        
+      }
+
+      .image {
+        grid-column: 1 / 6; 
+        grid-row: 1 / 6 ;
+        background: green;
+    
+      }
+
+
+      .header {
+        background: blue;
+        text-align: center;
+        border: black 5px solid;
+        grid-column: 1 / 6; 
+        grid-row: 1 / 2 ;
+      }
+
+      .nav {
+        background: red;
+        text-align: center;
+        border: black 5px solid;
+        grid-column: 1 / 4; 
+        grid-row: 2 / 3;
+      }
+
+      
+      .footer {
+        background: yellow;
+        text-align: center;
+        border: black 5px solid;
+        grid-column: 1 / 7; 
+        grid-row: 6 / 7 ;
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+
+
+      <div class="image">
+         
+          <img class="image-fluid"
+          src="img/library.webp"
+            
+            srcset="img/library@mobile.webp 320w,
+            img/library@wide-mobile.webp 480w,
+            img/library@tablet.webp 768w,
+            img/library@desktop.webp 1024w,
+            img/library@hires.webp 1280w"
+            sizes="(max-width: 30em) 60vw,
+            (max-width: 40em) 90vw"
+            alt="Image british library">
+     
+      </div>
+      <div class="header">Header
+        <a href="index.html"><img src="img/logo.png" alt="Logo de
+          Enciclopedia Front-End"
+          title="Logo de Enciclopedia Front-End" /></a>
+    <h3>Enciclopedia de Front-End</h3>
+      </div>
+      <div class="nav">Nav</div>
+      <div class="footer">Footer</div>
+
+
+    </div>
+  </body>
+</html>

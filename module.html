@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/bd5a7b2c58.js"
+      crossorigin="anonymous"></script>
+      <link rel="icon" type="image/png" href="archivos/logo_200.png"/>
+  </head>
+
+  <body>
+
+    <!--header------------------------------------------------------------>
+    <div class="header">
+      <a  href="index.html"><img src="archivos/logo_200.png" class="logo" alt="logo"/></a>
+      <h1>Enciclopedia de Front-End </h1>
+      <a>CA | <u>ES</u> | EN</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><u><a href="module.html">Module-Bundlers </a></u></li>
+        <li><a href="lenguajes.html">Lenguajes Front-End</a></li>
+        <li><a>Preprocesadores</a></li>
+      </ul>
+    </nav>
+
+    <section class="picture">
+      <picture>
+        <source media="(min-width: 1081px)"
+          srcset="archivos/principal_1920.jpg" class="responsive">
+
+        <source media="(max-width: 480px)" srcset="archivos/principal_480.jpg"
+          class="responsive">
+
+        <source media="(max-width: 1080px)" srcset="archivos/principal_1080.jpg"
+          class="responsive">
+
+        <img src="archivos/principal_1920.jpg" alt="ordenador"
+          class="responsive">
+      </picture>
+    </section>
+    <!--main----------------------------------------------------------------------->
+    <div class="main">
+      <section>
+        <h2>Module Boundlers</h2>
+        <p>
+          Por Airam Taleb Barreñada, 10 de marzo de 2022
+        </p>
+      </section>
+
+      <section class="autor">
+        <img src="archivos/airam2.jpg" class="imgAutor" alt="autor"/>
+
+        Tecnico de grado superior en Desarrollo de aplicaciones Web y
+        Desarrollo de Aplicaciones Multiplataforma.
+        Entusiasta de todo lo que tiene que ver con tecnologia y mecanica en
+        general, y cada dia que pasa con mas gusto por el diseño.
+
+      </section>
+      <hr>
+
+
+      <section>
+        <p>
+          Un module bundler nos permite automatizar una serie de tareas asi como
+          gestionar los assets de las dependencias que hemos instalado con npm
+          si
+          estamos utilizando ese gestor de paquetes. Parcel es un nuevo module
+          bundler que promete unos tiempos de building ultrarápidos y zero
+          config,
+          porlo que se postula como un claro rival para la herramienta más usada
+          actualmente: Webpack.
+          <hr>
+        </p>
+
+      </section>
+
+      <section class="video-responsive">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/JWRl6XiJYNA" title="designing a
+          progressive app" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+          <hr>
+        </p>
+
+      </section>
+
+    </div>
+    <!--footer------------------------------------------------------------>
+    <div class="footer">
+      &nbsp;
+      <a  href="index.html"><img src="archivos/logo_200.png" class="logo" alt="logo"/></a>
+      <h3>Enciclopedia de Front-End</h3>
+      <p>Calle Cantones 5. 31243 Estella</p>
+      <p>Tel. 948 22 65 36</p>
+      <p>info@enciclopediafrontend.org</p>
+
+      <section class="redes">
+        <ul>
+          <li>
+             <i class="fa-brands fa-facebook fa-1x"> </i> </a></li>
+          <li><i class="fa-brands fa-twitter fa-1x"></i></a></li>
+          <li><i class="fa-brands fa-whatsapp fa-1x"></i></a></li>
+          <li><i class="fa-brands fa-instagram fa-1x"></i></a></li>
+        </ul>
+      </section>
+
+      <section class="legal">
+        <ul>
+          <li><a>Quienes somos</a></li>
+          <li><a>Politica de privacidad</a></li>
+          <li><a>Aviso legal</a></li>
+          <li><a>Cookies</a></li>
+        </ul>
+      </section>
+    </div>
+
+  </body>
+
+</html>

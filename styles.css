@@ -1,0 +1,196 @@
+body {
+  margin: 0px;
+}
+
+/* header----------------------------- */
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+}
+
+.header a {
+  font-size: 0.8em;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.picture {
+  background: black;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* barra de navegacion */
+nav ul {
+  font-family: Verdana;
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+
+nav li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+nav li a:hover {
+  color: red;
+}
+
+/*color al pulsar/tactil*/
+nav li a:active {
+  color: red;
+}
+
+/* main -----------------------------------*/
+.main {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+hr {
+  color: red;
+}
+
+.autor {
+  background: #c7c9c6;
+  padding: 10px;
+  min-height: 100px;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 10px black solid;
+}
+
+.imgAutor {
+  max-width: 100px;
+  border-radius: 150px;
+  float: left;
+  padding: 5px;
+}
+
+/* Start: Video Responsive */
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 400px; /*  altura del video */
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.imagenes {
+  display: flex;
+
+  text-align: center;
+}
+
+.imagenes img {
+  width: 100%;
+  
+  
+}
+
+/* footer ------------------------------*/
+.footer {
+  margin: 0px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.redes ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-bottom: 10px;
+  margin: 0px;
+  list-style: none;
+}
+
+.redes a {
+  color: white;
+}
+
+.redes li i:hover {
+  color: red;
+}
+
+.redes li:active {
+  color: red;
+}
+
+.legal ul {
+  background-color: black;
+  color: aquamarine;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.legal li a {
+  color: aliceblue;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.legal li a:hover {
+  color: red;
+}
+
+.legal li:active {
+  color: red;
+}
+
+/*media queries -------------------------*/
+
+@media (max-width: 480px) {
+  nav ul,
+  .imagenes {
+    display: block;
+  }
+
+}
+
+@media (max-width: 800px) {
+  nav ul,
+  .legal ul,
+  .header {
+    display: block;
+  }
+
+  .imagenes {
+    display: block;
+    
+  }
+  
+  
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-rows: 100px 600px 200px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas:
+          "area1 area1 area1 area1 area5"
+          "area2 area3 area3 area3 area3"
+          "area2 area4 area4 area4 area4";
+      }
+
+      .grid-item1 {
+        background: blue;
+        text-align: center;
+        border: black 5px solid;
+        grid-area: area1;
+      }
+
+      .grid-item2 {
+        background: red;
+        text-align: center;
+        border: black 5px solid;
+        grid-area: area2;
+      }
+
+      .grid-item3 {
+        background: green;
+        text-align: center;
+        border: black 5px solid;
+        grid-area: area3;
+      }
+      .grid-item4 {
+        background: yellow;
+        text-align: center;
+        border: black 5px solid;
+        grid-area: area4;
+      }
+
+      .grid-item5 {
+        background: rgb(238, 238, 234);
+        text-align: center;
+        border: black 5px solid;
+        grid-area: area5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="grid-item1">Header</div>
+      <div class="grid-item2">Nav</div>
+      <div class="grid-item3">Image</div>
+      <div class="grid-item4">Footer</div>
+      <div class="grid-item5">5</div>
+      
+    </div>
+  </body>
+</html>
