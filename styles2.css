@@ -3,12 +3,20 @@ body {
   margin: auto;
 }
 
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /*grid-gap: 5px;*/
+}
+
 #divRed {
 
   background: red;
   grid-column: 5/ 6; 
-  grid-row: 1 / 4;
-
+  grid-row: 1 / 5;
 }
 
 #divBlack {
@@ -16,14 +24,6 @@ body {
   background: black;
   grid-column: 1 / 2; 
   grid-row: 3 / 6;
-
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  /*grid-gap: 5px;*/
 }
 
 #logo{
@@ -89,6 +89,11 @@ nav li a:hover {
   color: black;
   height: 200px;
  font-size: xx-large;
+}
+
+#logo2:hover {
+  height: 200px;
+  width: 500px;
 }
 
 .ani {
