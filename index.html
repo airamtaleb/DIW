@@ -17,9 +17,19 @@
 
     <div class="grid-container">
       <div class="image">
-        <picture class="responsive" >
-          <img src="archivos/enciclopedia.jpg"></img>
-        </picture>
+        <picture>
+          <source media="(min-width: 1081px)"
+              srcset="archivos/enciclopedia.jpg" >
+          <source media="(max-width: 480px)"
+              srcset="archivos/enciclopedia800.jpg"
+              class="responsive">
+
+          <source media="(max-width: 1080px)"
+              srcset="archivos/enciclopedia800.jpg"
+              class="responsive">
+          <img src="archivos/enciclopedia.jpg" alt="mesa trabajo"
+              class="responsive">
+      </picture>
       </div>
 
       <div id="divRed">
