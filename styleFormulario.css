@@ -110,12 +110,14 @@ fieldset {
 }
 
 /**  lo he quitado ya que sin usar js cambia el diseño al principio 
-:invalid  {
+:invalid   {
   border-color: #cf2121;
 }
 */
 
+
 :focus {
-  border-color: #3b0e31;
+  border-color: #691657;
+  border-width: 3px;
 }
 
