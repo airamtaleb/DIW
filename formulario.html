@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulario DIW08</title>
+        <link rel="stylesheet" type="text/css" href="styleFormulario.css" />
+    </head>
+
+    <body>
+        <div class="formulario">
+            <h1>Inscripción a las X jornadas Front End</h1>
+            <p class="center">Los campos señalados con <span
+                    class="obligatorio">*</span> son obligatorios</p>
+            <form action="#" method="post">
+
+                <div class="datos">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+
+                        <div class="input_container">
+                            <div class="input_div">
+                                <p>
+                                    <label for="nombre">Nombre<span
+                                            class="obligatorio">*</span></label>
+                                    <input
+                                        class="campos"
+                                        title="Solo caracteres alfabéticos."
+                                        required
+                                        type="text"
+                                        name="nombre"
+                                        id="nombre"
+                                        placeholder="Escribe tu nombre"
+                                        />
+                                </p>
+                            </div>
+                            <div class="input_div">
+                                <p>
+                                    <label for="apellidos">Apellidos<span
+                                            class="obligatorio">*</span></label>
+                                    <input
+                                        class="campos"
+                                        title="Solo caracteres alfabéticos."
+                                        required
+                                        type="text"
+                                        name="apellidos"
+                                        id="apellidos"
+                                        placeholder="Escribe tus apellidos"
+                                        />
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="input_container">
+                            <div class="input_div">
+
+                                <p>
+                                    <label for="email">Correo electrónico<span
+                                            class="obligatorio">*</span></label>
+                                    <input
+                                        class="campos"
+                                        title="caracteres alfabéticos y
+                                        numericos. @
+                                        en medio y . necesarios"
+                                        required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Escribe tu correo"
+                                        />
+                                </p>
+
+                            </div>
+                            <div class="input_div">
+
+                                <p>
+                                    <label for="telefono">Teléfono<span
+                                            class="obligatorio">*</span></label>
+                                    <input
+                                        class="campos"
+                                        title="Solo 9 caracteres numericos."
+                                        required pattern="[0-9]{9}$"
+                                        type="text"
+                                        name="telefono"
+                                        id="telefono"
+                                        placeholder="Escribe tu teléfono"
+                                        />
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="campos">
+                            <label for="fotografia">Fotografía para la
+                                acreditación</label>
+                            <input type="file"
+                                id="fotografia">
+
+                        </p>
+
+                    </fieldset>
+                </div>
+
+                <br/>
+
+                    <div class="perfil">
+                        <fieldset>
+                            <legend>Perfil de participante</legend>
+
+
+
+                            <p>
+                                <label for="participar">¿Por qué esta interesado
+                                    en
+                                    participar?<span
+                                        class="obligatorio">*</span></label>
+                                <textarea
+                                    title="Solo caracteres alfabeticos y
+                                    numericos."
+                                    required
+                                    name="participar"
+                                    id="participar"
+                                    placeholder="..."
+                                    onclick="seleccionarTextArea()"></textarea>
+                            </p>
+
+
+                            <p>
+                                <label for="actividad">Actividad profesional<span
+                                        class="obligatorio">*</span></label>
+                                <select id="actividad" name="actividad"
+                                    class="campos"
+                                    title="seleccione una actividad"
+                                    required>
+                                    <option value="">Seleccione una actividad</option>
+                                    <option value="Estudiante de bachillerato">Estudiante
+                                        de bachillerato</option>
+                                    <option value="Estudiante universitario">Estudiante
+                                        universitario</option>
+                                    <option value="Profesor de bachillerato">Profesor
+                                        de bachillerato</option>
+                                    <option value="Profesor universitario">Profesor
+                                        universitario</option>
+                                    <option value="Otra actividad profesional">Otra
+                                        actividad profesional</option>
+                                </select>
+                            </p>
+
+
+                            <label for="talleres">¿En qué talleres esta
+                                interesado?<span
+                                    class="obligatorio">*</span></label>
+
+                            <p class="little">Para seleccionar más de una
+                                opción; mantened
+                                pulsada la tecla
+                                Control(Wiondows)/Command(Mac)mientras
+                                hacéis clic a las opciones</p>
+
+                            <select id="talleres" name="talleres" size="7"
+                                class="campos2"
+                                title="seleccione una o mas"
+                                required
+                                multiple>
+                                <option value="La encriptación a lo largo de
+                                    la historia">La encriptación a lo largo
+                                    de la historia</option>
+                                <option value="Seguridad informática">Seguridad
+                                    informática</option>
+                                <option value="Redes sociales y teoría de
+                                    grafos">Redes sociales y teoría de
+                                    grafos</option>
+                                <option value="Matemáticas y azar">Matemáticas
+                                    y azar</option>
+                                <option value="Problemas matemáticos del
+                                    milenio">Problemas matemáticos del
+                                    milenio</option>
+                                <option value="La predicción del tiempo">La
+                                    predicción del tiempo</option>
+                                <option value="Fractales en el aula">Fractales
+                                    en el aula</option>
+                            </select>
+
+
+                            <p>
+                                <label>Seleccione una de las tres
+                                    opciones<span
+                                        class="obligatorio">*</span></label>
+                                <br/><br/>
+                                        <input type="radio" id="asistencia1"
+                                            name="asistencia" value="45"
+                                            required>
+                                        <label for="asistencia1">Asistiré los
+                                            días 4
+                                            y 5
+                                            de mayo</label><br/><br/>
+                                                <input type="radio"
+                                                    id="asistencia2"
+                                                    name="asistencia" value="4">
+                                                <label for="asistencia2">Asistiré
+                                                    solo el
+                                                    día 4
+                                                    de mayo</label><br/><br/>
+                                                        <input type="radio"
+                                                            id="asistencia3"
+                                                            name="asistencia"
+                                                            value="5">
+                                                        <label
+                                                            for="asistencia3">Asistiré
+                                                            solo el
+                                                            día 5
+                                                            de mayo</label><br><br>
+                                                    </p>
+
+                                                </fieldset>
+                                            </div>
+
+                                            <br/>
+                                                <p class="center">Los campos
+                                                    señalados con <span
+                                                        class="obligatorio">*</span>
+                                                    son obligatorios</p>
+                                                <br/>
+                                                    <label><input
+                                                            type="checkbox"
+                                                            id="legal" required
+                                                            value="acepto"> He
+                                                        leído y acepto la
+                                                        <u>política de
+                                                            privacidad</u> y el
+                                                        <u>aviso legal</u><span
+                                                            class="obligatorio">*</span></label><br/>
+                                                        <button type="submit"
+                                                            name="enviar_formulario"
+                                                            id="enviar">
+                                                            <b>Enviar</b>
+                                                        </button>
+
+
+                                                    </form>
+
+
+                                                </div>
+
+                                            </body>
+                                        </html>
