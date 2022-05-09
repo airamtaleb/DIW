@@ -161,6 +161,12 @@ y no me termina de convencer.
 
 @media (max-width: 800px) {
   
+  nav ul,
+  .imagenes {
+    display: block;
+
+    
+  }
   form {
     width: auto;
     margin: 10px auto;
