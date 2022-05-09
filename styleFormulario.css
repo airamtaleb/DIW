@@ -125,34 +125,6 @@ y no me termina de convencer.
   
 }
 
-
-
-@media (max-width: 800px) {
-  
-  form {
-    width: auto;
-    margin: 10px auto;
-  }
-
-  .formulario {
-    width: auto;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    background-color: #fbfbfb;
-    padding-left: 10px;
-  }
-
-  .input_container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-  }
-  
-}
-
 @media (max-width: 480px) {
   nav ul,
   .imagenes {
@@ -184,4 +156,34 @@ y no me termina de convencer.
   }
 
 }
+
+
+
+@media (max-width: 800px) {
+  
+  form {
+    width: auto;
+    margin: 10px auto;
+  }
+
+  .formulario {
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 10px;
+  }
+
+  .input_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  
+}
+
+
 
