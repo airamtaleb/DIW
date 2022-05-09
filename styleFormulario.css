@@ -158,8 +158,8 @@ y no me termina de convencer.
 }
 
 
-
-@media (max-width: 800px) {
+/*los moviles de hoy en dia tienen una resolucion bestial*/
+@media (max-width: 1080px) {
   
   nav ul,
   .imagenes {
