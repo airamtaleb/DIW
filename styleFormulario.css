@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   background-color: #ab4493;
 }
 
@@ -30,17 +30,17 @@ body {
 }
 
 .campos2 {
-    outline: 0;
-    background-color: #fbfbfb;
-    width: 95%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ab4493;
-    margin-top: 10px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-  }
+  outline: 0;
+  background-color: #fbfbfb;
+  width: 95%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
 
 textarea {
   outline: 0;
@@ -72,15 +72,16 @@ button {
 }
 
 span {
-    color:#972b77;
-  }
+  color: #972b77;
+}
 
 form {
   width: 600px;
   margin: 10px auto;
 }
 
-h1,.center {
+h1,
+.center {
   text-align: center;
   width: 95%;
 }
@@ -88,7 +89,6 @@ h1,.center {
 fieldset {
   border: 2px solid #000;
   border-radius: 8px;
-  
 }
 
 .input_container {
@@ -98,15 +98,12 @@ fieldset {
 }
 
 .input_div {
-
   display: flex;
   flex-direction: column;
 }
 
-
 .little {
-
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 /**  lo he quitado ya que sin usar js cambia el diseño al principio 
@@ -117,26 +114,15 @@ y no me termina de convencer.
 }
 */
 
-
-
 :focus {
   border-color: #972b77;
   border-width: 3px;
-  
 }
 
 @media (max-width: 480px) {
   nav ul,
   .imagenes {
     display: block;
-
-    
-  }
-
-  body {
-
-    font-size: 2em;
-
   }
 
   form {
@@ -160,25 +146,18 @@ y no me termina de convencer.
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
-
 }
 
-
-/*probando mi redmi note 9s..
- que interesante hubiera sido haber dedicado mas tiempo a srcset y chumillas..*/
+/*probando mi redmi note 9s...hay que optimizar mucho mejor
+ hay que dedicarle tiempo a srcset y chumillas..*/
 @media (max-width: 1080px) {
-  
   nav ul,
   .imagenes {
     display: block;
-
-    
   }
 
   body {
-
     font-size: 2em;
-
   }
   form {
     width: auto;
@@ -201,8 +180,4 @@ y no me termina de convencer.
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
-  
 }
-
-
-
