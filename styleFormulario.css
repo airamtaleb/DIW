@@ -133,6 +133,12 @@ y no me termina de convencer.
     
   }
 
+  body {
+
+    font-size: 2em;
+
+  }
+
   form {
     width: auto;
     margin: 10px auto;
@@ -167,6 +173,12 @@ y no me termina de convencer.
     display: block;
 
     
+  }
+
+  body {
+
+    font-size: 2em;
+
   }
   form {
     width: auto;
